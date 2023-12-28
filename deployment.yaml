@@ -4,7 +4,7 @@ metadata:
   name: dnsptra.my.id
   namespace: denikube
   labels:
-    app: testlaravel
+    app: web-porto
     type: web-porto
 spec:
   replicas: 1
@@ -17,7 +17,7 @@ spec:
       namespace: denikube
       creationTimestamp: null
       labels:
-        app: testlaravel
+        app: web-porto
         type: web-porto
     spec:
       containers:
