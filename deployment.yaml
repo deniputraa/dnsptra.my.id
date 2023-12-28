@@ -1,0 +1,25 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: dnsptra.my.id
+  namespace: denikube
+  labels:
+    app: testlaravel
+    type: web-porto
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      type: web-porto
+  template:
+    metadata:
+      name: dnsptra.my.id-pod
+      namespace: denikube
+      creationTimestamp: null
+      labels:
+        app: testlaravel
+        type: web-porto
+    spec:
+      containers:
+        - name: dnsptra.my.id-cont
+          image: deniputraa/dnsptra.my.id:latest
