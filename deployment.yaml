@@ -22,4 +22,4 @@ spec:
     spec:
       containers:
         - name: dnsptra.my.id-cont
-          image: deniputraa/dnsptra.my.id:latest
+          image: deniputraa/dnsptra.my.id:v1
